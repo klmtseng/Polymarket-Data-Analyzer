@@ -1,0 +1,5 @@
+{
+  "name": "Polymarket Data Analyzer",
+  "description": "An application to download and study historical data from Polymarket using AI-generated data and analysis.",
+  "requestFramePermissions": []
+}
