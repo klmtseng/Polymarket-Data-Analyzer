@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Polymarket Data Analyzer
 
-# Run and deploy your AI Studio app
+A React + Vite app for exploring prediction-market data: enter a market topic, and Gemini generates a plausible, fictional dataset that you can chart and interrogate through a chat interface.
 
-This contains everything you need to run your app locally.
+Note: the data is AI-generated for study purposes, not fetched from the live Polymarket API.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1zA3GvHoPyhPww7kc3Wod7IOrTJBJYXy_
+## Features
 
-## Run Locally
+- Generates a structured market dataset (outcomes, 90-day price history, current prices, volumes) from any topic via a Gemini JSON schema
+- Interactive price-history chart built with Recharts
+- Chat interface for asking follow-up questions about the generated dataset
+- Typed data model shared across the chart, chat, and generation services
 
-**Prerequisites:**  Node.js
+## Run locally
 
+Prerequisite: Node.js
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Install dependencies: `npm install`
+2. Create `.env.local` and set `GEMINI_API_KEY` to your Gemini API key
+3. Start the dev server: `npm run dev`
